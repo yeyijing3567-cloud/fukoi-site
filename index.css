@@ -667,18 +667,24 @@ main,
 .project-stack {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
 }
 
 .project-card {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.88fr);
   border-radius: var(--radius-xl);
-  background: var(--bg-panel-strong);
+  background:
+    linear-gradient(180deg, rgba(179, 144, 99, 0.05), transparent 20%),
+    var(--bg-panel-strong);
 }
 
 .project-card-secondary {
   grid-template-columns: minmax(320px, 0.92fr) minmax(0, 0.98fr);
+}
+
+.project-card-primary {
+  grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.82fr);
 }
 
 .project-card-visual {
@@ -710,11 +716,39 @@ main,
     linear-gradient(90deg, rgba(7, 10, 14, 0.1), transparent 36%, rgba(7, 10, 14, 0.16));
 }
 
+.project-visual-meta {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  z-index: 1;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(244, 241, 235, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.42);
+}
+
 .project-card-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 42px 40px;
+}
+
+.project-card-primary .project-card-copy {
+  padding-left: 46px;
+}
+
+.project-card-copy::before {
+  content: "";
+  width: 56px;
+  height: 1px;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, rgba(179, 144, 99, 0.68), transparent);
 }
 
 .status-badge {
@@ -739,6 +773,7 @@ main,
 
 .project-description {
   margin-top: 16px;
+  max-width: 40ch;
   color: var(--text-muted);
   font-size: 0.98rem;
   line-height: 1.9;
@@ -750,6 +785,10 @@ main,
   font-family: var(--font-mono);
   font-size: 0.76rem;
   letter-spacing: 0.08em;
+}
+
+.project-section-header {
+  max-width: 760px;
 }
 
 .info-grid {
