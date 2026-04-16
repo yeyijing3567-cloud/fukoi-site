@@ -85,14 +85,14 @@ window.SITE_CONTENT = {
   home: {
     ja: {
       title: "株式会社富鯉 | Game Development, Operations, and Overseas Markets",
-      hero_tag: "JAPAN-BASED GAME COMPANY",
-      hero_title: "日本発のゲームプロダクトを、<br><span class='highlight'>グローバル市場へ。</span>",
+      hero_tag: "GAME DEVELOPMENT / GAME OPERATIONS / OVERSEAS EXPANSION",
+      hero_title: "株式会社富鯉",
       hero_subtitle: "株式会社富鯉は、日本に拠点を置く独立法人として、ゲームプロダクトの開発・運営および海外市場展開に取り組んでいます。",
       hero_primary: "PROJECTS",
       hero_secondary: "STUDIO / COMPANY",
-      hero_poster_label: "PRIMARY TITLE",
-      hero_poster_title: "NEW TACTICAL PROJECT",
-      hero_poster_copy: "日本市場を見据えたビジュアル表現と、直感的な戦術体験を軸に構築中の新作プロジェクト。",
+      hero_poster_label: "FEATURED PROJECT",
+      hero_poster_title: "TACTICAL PIXEL PROJECT",
+      hero_poster_copy: "日本市場を見据えた戦術体験とピクセルアート表現を軸に、現在開発を進めている注力プロジェクト。",
       about_title: "ABOUT FUKOI",
       about_subtitle: "日本発、グローバル展開を見据えたゲーム開発・運営体制",
       about_body: "富鯉株式会社は、日本に拠点を置く独立法人として、日本および海外市場に向けたゲームプロダクトの開発、運営および関連事業の展開を行っております。市場特性を踏まえたローカライズ対応、運営管理、日本国内の制作パートナーや発行会社との連携を通じて、良質なゲームコンテンツをより広い市場へ届けることを目指しております。",
@@ -104,7 +104,7 @@ window.SITE_CONTENT = {
       capability_3_body: "ローカライズ、制作連携、発行協力を通じて市場展開を推進",
       projects_title: "FEATURED TITLES",
       project_primary_status: "IN DEVELOPMENT",
-      project_primary_title: "NEW TACTICAL PROJECT",
+      project_primary_title: "TACTICAL PIXEL PROJECT",
       project_primary_body: "ピクセルアートによる戦場表現と、直感的な戦術体験を軸に構築中の新作プロジェクト。日本市場を見据えたビジュアル表現とゲーム体験の両立を目指し、開発を進めています。",
       project_primary_action: "VIEW PROJECT",
       project_secondary_status: "IN DEVELOPMENT",
@@ -112,18 +112,18 @@ window.SITE_CONTENT = {
       project_secondary_body: "鮮やかで広大なファンタジー世界を舞台に、独自の魔法体系と戦略性を掛け合わせた開発中プロジェクト。世界観表現と継続運営を見据えたプロダクト設計を進めています。",
       project_secondary_action: "VIEW PROJECT",
       company_intro_eyebrow: "COMPANY PRESENCE",
-      company_intro_body: "Games in development for Japan and beyond."
+      company_intro_body: "日本市場と海外展開の双方を見据えて開発・運営を進めています。"
     },
     en: {
       title: "Fukoi Inc. | Game Development, Operations, and Overseas Markets",
-      hero_tag: "JAPAN-BASED GAME COMPANY",
-      hero_title: "Game products born in Japan,<br><span class='highlight'>built for broader markets.</span>",
+      hero_tag: "GAME DEVELOPMENT / GAME OPERATIONS / OVERSEAS EXPANSION",
+      hero_title: "Fukoi Inc.",
       hero_subtitle: "Fukoi Inc. is an independent company based in Japan, engaged in game development, game operations, and overseas market expansion.",
       hero_primary: "PROJECTS",
       hero_secondary: "STUDIO / COMPANY",
-      hero_poster_label: "PRIMARY TITLE",
-      hero_poster_title: "NEW TACTICAL PROJECT",
-      hero_poster_copy: "A new tactical title in development, combining Japan-oriented visual sensibility with direct, readable combat appeal.",
+      hero_poster_label: "FEATURED PROJECT",
+      hero_poster_title: "TACTICAL PIXEL PROJECT",
+      hero_poster_copy: "A focus title now in development, built around pixel-art battlefield drama and a clean tactical read for the Japanese market.",
       about_title: "ABOUT FUKOI",
       about_subtitle: "A Japan-based development and operations structure built for broader market expansion",
       about_body: "Fukoi Inc. is an independent company based in Japan, engaged in the development, operation, and related expansion of game products for Japan and overseas markets. Through localization aligned with market characteristics, live-operations management, and collaboration with domestic production partners and publishing companies, we aim to deliver high-quality game content to broader audiences.",
@@ -135,7 +135,7 @@ window.SITE_CONTENT = {
       capability_3_body: "Localization, production collaboration, and publishing support for market entry",
       projects_title: "FEATURED TITLES",
       project_primary_status: "IN DEVELOPMENT",
-      project_primary_title: "NEW TACTICAL PROJECT",
+      project_primary_title: "TACTICAL PIXEL PROJECT",
       project_primary_body: "A new project in development centered on expressive pixel-art battlefields and intuitive tactical pacing, designed with the Japanese market in mind.",
       project_primary_action: "VIEW PROJECT",
       project_secondary_status: "IN DEVELOPMENT",
@@ -143,18 +143,18 @@ window.SITE_CONTENT = {
       project_secondary_body: "An in-development fantasy project blending vivid worldbuilding, a bespoke magic system, and long-term product thinking for sustained operations.",
       project_secondary_action: "VIEW PROJECT",
       company_intro_eyebrow: "COMPANY PRESENCE",
-      company_intro_body: "Games in development for Japan and beyond."
+      company_intro_body: "A Japan-based operating structure with products moving toward both domestic and overseas audiences."
     },
     zh: {
       title: "株式会社富鲤 | 游戏开发、运营与海外市场拓展",
-      hero_tag: "JAPAN-BASED GAME COMPANY",
-      hero_title: "从日本出发的游戏产品，<br><span class='highlight'>面向更广阔的市场。</span>",
+      hero_tag: "GAME DEVELOPMENT / GAME OPERATIONS / OVERSEAS EXPANSION",
+      hero_title: "株式会社富鲤",
       hero_subtitle: "株式会社富鲤作为设立于日本的独立法人，正在开展游戏产品开发、运营以及海外市场拓展。",
       hero_primary: "项目",
       hero_secondary: "公司介绍",
-      hero_poster_label: "PRIMARY TITLE",
-      hero_poster_title: "NEW TACTICAL PROJECT",
-      hero_poster_copy: "以日本市场审美与直观战术体验为核心方向推进中的新作项目。",
+      hero_poster_label: "FEATURED PROJECT",
+      hero_poster_title: "TACTICAL PIXEL PROJECT",
+      hero_poster_copy: "当前重点推进中的战术像素项目，围绕更本土化的日式审美与清晰直接的战斗体验展开。",
       about_title: "ABOUT FUKOI",
       about_subtitle: "从日本出发，面向全球拓展的游戏开发与运营体系",
       about_body: "富鲤株式会社是设立于日本的独立法人，面向日本及海外市场开展游戏产品开发、运营及相关业务拓展。基于对市场特性的理解，我们通过本地化对应、运营管理，以及与日本国内制作伙伴和发行公司的协作，持续推动优质游戏内容进入更广阔的市场。",
@@ -166,7 +166,7 @@ window.SITE_CONTENT = {
       capability_3_body: "通过本地化、制作协作与发行支持推进市场拓展",
       projects_title: "精选项目",
       project_primary_status: "开发中",
-      project_primary_title: "NEW TACTICAL PROJECT",
+      project_primary_title: "TACTICAL PIXEL PROJECT",
       project_primary_body: "以像素风战场表现与直观战术体验为核心推进中的新作项目，兼顾日本市场导向与产品表现力。",
       project_primary_action: "查看项目",
       project_secondary_status: "开发中",
@@ -174,15 +174,15 @@ window.SITE_CONTENT = {
       project_secondary_body: "正在开发中的奇幻项目，围绕鲜明世界观、自研魔法体系与可持续运营设计持续推进。",
       project_secondary_action: "查看项目",
       company_intro_eyebrow: "COMPANY PRESENCE",
-      company_intro_body: "面向日本与更广市场持续开发中的游戏产品。"
+      company_intro_body: "以日本市场为起点，并同步面向更广区域推进开发与运营布局。"
     }
   },
   studio: {
     ja: {
       title: "STUDIO / COMPANY | 株式会社富鯉",
       hero_tag: "STUDIO / COMPANY",
-      hero_title: "ブランド以前に、<br><span class='highlight'>運営される会社として。</span>",
-      hero_subtitle: "株式会社富鯉は、日本に拠点を置く独立法人として、ゲームプロダクトの開発・運営および海外市場展開に取り組んでいます。",
+      hero_title: "株式会社富鯉",
+      hero_subtitle: "ゲームプロダクトの開発・運営および海外市場展開に取り組む、日本拠点の独立法人です。",
       narrative_title: "STUDIO / COMPANY",
       narrative_body: "株式会社富鯉は、日本に拠点を置く独立法人として、ゲームプロダクトの開発・運営および海外市場展開に取り組んでおります。AI活用を中核としたゲーム開発体制を構築し、複数プロジェクトにおいて実運用を進めています。コンテンツ制作、ローカライズ、運営準備を含む一連のプロセスを通じて、より多くのユーザーへ魅力あるゲーム体験を届けることを目指しています。",
       ai_title: "DEVELOPMENT STRUCTURE",
@@ -195,13 +195,13 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "日本市場を起点に、運営導線と市場適応を整備",
       initiatives_card_3_title: "複数案件の実運用",
       initiatives_card_3_body: "単発検証ではなく、複数プロジェクトで継続的に運用中",
-      page_note: "This page presents the company, its current development posture, and external-facing operating context."
+      page_note: "Selected project frames from active development"
     },
     en: {
       title: "STUDIO / COMPANY | Fukoi Inc.",
       hero_tag: "STUDIO / COMPANY",
-      hero_title: "Before a fixed brand,<br><span class='highlight'>an operating company.</span>",
-      hero_subtitle: "Fukoi Inc. is an independent company based in Japan, engaged in game development, operations, and overseas market expansion.",
+      hero_title: "Fukoi Inc.",
+      hero_subtitle: "An independent company based in Japan, engaged in game development, operations, and overseas market expansion.",
       narrative_title: "STUDIO / COMPANY",
       narrative_body: "Fukoi Inc. is an independent company based in Japan, engaged in game development, game operations, and overseas market expansion. We have established an AI-centered game development structure and are moving multiple projects through real operational execution. Through content production, localization, and launch-readiness work, we aim to deliver compelling game experiences to broader audiences.",
       ai_title: "DEVELOPMENT STRUCTURE",
@@ -214,13 +214,13 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "Operational and market-readiness systems built with Japan as the starting point",
       initiatives_card_3_title: "Multiple projects in motion",
       initiatives_card_3_body: "Not a one-off experiment, but real execution across multiple projects",
-      page_note: "This page presents the company, its current development posture, and external-facing operating context."
+      page_note: "Selected project frames from active development"
     },
     zh: {
       title: "STUDIO / COMPANY | 株式会社富鲤",
       hero_tag: "STUDIO / COMPANY",
-      hero_title: "在品牌定案之前，<br><span class='highlight'>先是一家真实运作的公司。</span>",
-      hero_subtitle: "株式会社富鲤作为设立于日本的独立法人，正在推进游戏产品开发、运营与海外市场拓展。",
+      hero_title: "株式会社富鲤",
+      hero_subtitle: "一家设立于日本、正在推进游戏开发、运营与海外市场拓展的独立法人。",
       narrative_title: "STUDIO / COMPANY",
       narrative_body: "株式会社富鲤是设立于日本的独立法人，正在推进游戏产品开发、运营以及海外市场拓展。我们已经构建了以 AI 应用为核心的游戏开发体系，并在多个项目中进入真实运作阶段。通过内容制作、本地化与运营准备等一体化流程，我们希望向更多用户交付更具吸引力的游戏体验。",
       ai_title: "开发体制",
@@ -233,7 +233,7 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "以日本市场为起点，完善运营导向与市场适配",
       initiatives_card_3_title: "多个项目的真实运作",
       initiatives_card_3_body: "不是一次性验证，而是在多个项目中持续推进",
-      page_note: "This page presents the company, its current development posture, and external-facing operating context."
+      page_note: "当前开发中的代表项目画面"
     }
   }
 };

@@ -304,9 +304,9 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent-gold);
 }
@@ -320,9 +320,9 @@ p {
 
 .hero-title {
   margin-top: 18px;
-  font-size: clamp(2.8rem, 6vw, 5.8rem);
-  line-height: 0.96;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   color: #fff;
 }
 
@@ -330,10 +330,16 @@ p {
   color: var(--accent);
 }
 
+.hero-title-company {
+  max-width: 12ch;
+  font-size: clamp(3rem, 5vw, 4.6rem);
+}
+
 .hero-subtitle {
   margin-top: 22px;
-  max-width: 41ch;
-  font-size: 1.07rem;
+  max-width: 34ch;
+  font-size: 0.98rem;
+  line-height: 1.9;
   color: var(--text-muted);
 }
 
@@ -359,19 +365,20 @@ p {
 }
 
 .poster-card {
-  position: relative;
-  overflow: hidden;
+  display: grid;
+  gap: 18px;
   border-radius: var(--radius-xl);
-  min-height: 640px;
+  padding: 26px;
   background:
     linear-gradient(180deg, rgba(255, 122, 69, 0.10), rgba(14, 22, 33, 0.94)),
     rgba(11, 20, 31, 0.96);
 }
 
 .poster-card-meta {
-  position: relative;
-  z-index: 2;
-  padding: 28px 28px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .poster-chip {
@@ -387,35 +394,60 @@ p {
 }
 
 .poster-card-title {
-  margin-top: 16px;
-  font-size: clamp(1.8rem, 3vw, 2.7rem);
-  line-height: 1.04;
+  font-size: clamp(1.7rem, 2.8vw, 2.3rem);
+  line-height: 1.1;
   color: #fff;
 }
 
 .poster-card-copy {
-  margin-top: 12px;
-  max-width: 32ch;
+  max-width: 34ch;
   color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.poster-logo {
+  width: min(44%, 180px);
+  flex: 0 0 auto;
+  opacity: 0.92;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.32));
 }
 
 .poster-art-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.42 / 1;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(160deg, #1a2734 0%, #0d1118 100%);
+  filter: drop-shadow(0 26px 54px rgba(0, 0, 0, 0.4));
+}
+
+.poster-art-frame::after {
+  content: "";
   position: absolute;
-  right: -2%;
-  bottom: 0;
-  width: 70%;
-  max-width: 520px;
-  filter: drop-shadow(0 26px 60px rgba(0, 0, 0, 0.55));
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8, 16, 24, 0.06) 0%, rgba(8, 16, 24, 0.18) 100%),
+    linear-gradient(90deg, rgba(8, 16, 24, 0.16) 0%, rgba(8, 16, 24, 0) 32%, rgba(8, 16, 24, 0.14) 100%);
 }
 
 .poster-art {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.poster-card-footer {
+  display: grid;
+  gap: 8px;
 }
 
 .studio-side-panel {
   display: grid;
-  gap: 18px;
+  gap: 16px;
   padding: 22px;
   border-radius: var(--radius-xl);
   background:
@@ -424,8 +456,12 @@ p {
 }
 
 .studio-side-note {
-  color: var(--text-muted);
-  font-size: 0.95rem;
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .mini-poster-stack {
@@ -436,6 +472,7 @@ p {
 }
 
 .mini-poster {
+  position: relative;
   overflow: hidden;
   border-radius: 22px;
 }
@@ -444,6 +481,28 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mini-poster-image-tactical {
+  object-position: center center;
+}
+
+.mini-poster-caption {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(10, 18, 28, 0.58), rgba(10, 18, 28, 0.88));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .mini-poster-primary {
@@ -551,7 +610,7 @@ p {
 
 .project-card-visual {
   position: relative;
-  min-height: 540px;
+  min-height: 500px;
   overflow: hidden;
 }
 
@@ -562,27 +621,17 @@ p {
 }
 
 .project-poster-image {
-  position: absolute;
-  right: 0;
-  bottom: -4%;
-  width: auto;
-  height: 110%;
-  max-width: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-visual-overlay {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 24px;
-  background: linear-gradient(90deg, rgba(10, 18, 28, 0.72) 0%, rgba(10, 18, 28, 0.14) 56%, rgba(10, 18, 28, 0.08) 100%);
-}
-
-.project-logo-image {
-  width: 68%;
-  max-width: 380px;
+  background:
+    linear-gradient(180deg, rgba(10, 18, 28, 0.04) 0%, rgba(10, 18, 28, 0.16) 100%),
+    linear-gradient(90deg, rgba(10, 18, 28, 0.12) 0%, rgba(10, 18, 28, 0) 54%, rgba(10, 18, 28, 0.18) 100%);
 }
 
 .project-card-visual-goblin {
@@ -599,7 +648,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 36px;
+  padding: 38px;
 }
 
 .status-badge {
@@ -617,8 +666,8 @@ p {
 }
 
 .project-title {
-  font-size: clamp(1.8rem, 3vw, 3.2rem);
-  line-height: 1.02;
+  font-size: clamp(1.7rem, 2.8vw, 3rem);
+  line-height: 1.08;
 }
 
 .project-description {
@@ -652,9 +701,9 @@ p {
 .footer-heading {
   display: inline-block;
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent-blue);
 }
@@ -733,12 +782,7 @@ p {
   }
 
   .poster-card {
-    min-height: 540px;
-  }
-
-  .poster-art-frame {
-    width: 54%;
-    right: 2%;
+    padding: 24px;
   }
 
   .project-card-visual,
@@ -780,24 +824,15 @@ p {
   }
 
   .poster-card {
-    min-height: 510px;
+    padding: 22px;
   }
 
   .poster-card-meta {
-    padding-right: 22px;
-  }
-
-  .poster-art-frame {
-    width: 66%;
-    right: -8%;
+    flex-wrap: wrap;
   }
 
   .project-card-visual {
     min-height: 360px;
-  }
-
-  .project-poster-image {
-    height: 108%;
   }
 }
 
@@ -823,7 +858,11 @@ p {
   }
 
   .hero-title {
-    font-size: clamp(2.35rem, 11vw, 3.4rem);
+    font-size: clamp(2.25rem, 10vw, 3.2rem);
+  }
+
+  .hero-title-company {
+    font-size: clamp(2.45rem, 10.5vw, 3.35rem);
   }
 
   .hero-subtitle,
@@ -844,13 +883,7 @@ p {
   }
 
   .poster-card {
-    min-height: 440px;
-  }
-
-  .poster-art-frame {
-    width: 72%;
-    right: -16%;
-    bottom: -3%;
+    padding: 18px;
   }
 
   .project-card-copy,
@@ -864,9 +897,5 @@ p {
 
   .project-card-visual {
     min-height: 300px;
-  }
-
-  .project-logo-image {
-    width: 78%;
   }
 }
