@@ -489,8 +489,8 @@ main,
 
 .studio-side-panel {
   display: grid;
-  gap: 16px;
-  padding: 18px;
+  gap: 14px;
+  padding: 20px;
   border-radius: var(--radius-xl);
   background:
     linear-gradient(180deg, rgba(179, 144, 99, 0.05), transparent 20%),
@@ -499,16 +499,16 @@ main,
 
 .studio-side-note {
   color: var(--accent-strong);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  line-height: 1.7;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  line-height: 1.45;
 }
 
 .mini-poster-stack {
   display: grid;
   grid-template-columns: 1fr 0.84fr;
   gap: 12px;
-  align-items: end;
+  align-items: start;
 }
 
 .mini-poster {
@@ -523,11 +523,12 @@ main,
 }
 
 .mini-poster-primary {
-  height: 472px;
+  height: 456px;
 }
 
 .mini-poster-secondary {
-  height: 312px;
+  height: 388px;
+  margin-top: 34px;
 }
 
 .mini-poster-caption {
@@ -535,11 +536,11 @@ main,
   left: 12px;
   right: 12px;
   bottom: 12px;
-  padding-top: 10px;
+  padding-top: 9px;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   color: rgba(244, 241, 235, 0.92);
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
+  font-size: 0.58rem;
+  letter-spacing: 0.11em;
   line-height: 1.5;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
 }
@@ -863,7 +864,8 @@ main,
   }
 
   .mini-poster-secondary {
-    height: 280px;
+    height: 300px;
+    margin-top: 0;
   }
 
   .project-card-visual {

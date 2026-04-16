@@ -195,7 +195,7 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "日本市場を起点に、運営導線と市場適応を整備",
       initiatives_card_3_title: "複数案件の実運用",
       initiatives_card_3_body: "単発検証ではなく、複数プロジェクトで継続的に運用中",
-      page_note: "Selected project frames from active development"
+      page_note: "ACTIVE PROJECTS"
     },
     en: {
       title: "STUDIO / COMPANY | Fukoi Inc.",
@@ -214,7 +214,7 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "Operational and market-readiness systems built with Japan as the starting point",
       initiatives_card_3_title: "Multiple projects in motion",
       initiatives_card_3_body: "Not a one-off experiment, but real execution across multiple projects",
-      page_note: "Selected project frames from active development"
+      page_note: "ACTIVE PROJECTS"
     },
     zh: {
       title: "STUDIO / COMPANY | 株式会社富鲤",
@@ -233,7 +233,7 @@ window.SITE_CONTENT = {
       initiatives_card_2_body: "以日本市场为起点，完善运营导向与市场适配",
       initiatives_card_3_title: "多个项目的真实运作",
       initiatives_card_3_body: "不是一次性验证，而是在多个项目中持续推进",
-      page_note: "当前开发中的代表项目画面"
+      page_note: "代表项目"
     }
   }
 };
