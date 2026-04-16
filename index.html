@@ -3,212 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FURI STUDIO | 株式会社富鯉</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230d0d12'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='30' font-weight='700' fill='%23c9002b'%3EF%3C/text%3E%3C/svg%3E">
-    <!-- CSS and Fonts are loaded in CSS file -->
+    <title>株式会社富鯉 | Game Development, Operations, and Overseas Markets</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090d14'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='%23ff7a45'%3EF%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="index.css">
-    <script>
-      // i18n Translations Dictionary
-      const translations = {
-        ja: {
-          nav_games: "GAMES",
-          nav_studio: "STUDIO",
-          nav_careers: "CAREERS",
-          nav_contact: "お問い合わせ",
-          hero_tag: "WE ARE FURI",
-          hero_title: "壮大な世界を、<br><span class='highlight'>ここに創り出す。</span>",
-          hero_subtitle: "最高峰の2Dアートと、心を揺さぶるゲーム体験を求めて。伝説の戦いとファンタジーが交差する、我々が築き上げる新たな宇宙へ。",
-          hero_btn: "プロジェクトを見る <i>▶</i>",
-          sec_featured: "FEATURED TITLES",
-          goblin_tag: "IN DEVELOPMENT",
-          goblin_title: "プロジェクト：GOBLIN",
-          goblin_desc: "鮮やかで広大なファンタジー世界で、独自の魔法を極めよう。属性魔法を組み合わせてカオスなバトルを制し、ゴブリンの部族が支配する神秘的な大地を征服せよ。",
-          goblin_btn: "詳細を見る",
-          tank_tag: "EARLY ACCESS",
-          tank_title: "ピクセル・タンク (仮名)",
-          tank_desc: "爽快感抜群のレトロアーケード・タクティクス。個性豊かなドット絵の英雄たちで部隊を編成し、画面が揺れるほどの激しい戦車戦で、冷酷な敵将軍を打ち倒せ。",
-          tank_btn: "公式サイトへ",
-          footer_desc: "次世代の2Dマスターピースを、ゼロから創り上げる。",
-          footer_copy: "&copy; 2026 株式会社富鯉 (Furi Studio). All rights reserved."
-        },
-        en: {
-          nav_games: "GAMES",
-          nav_studio: "STUDIO",
-          nav_careers: "CAREERS",
-          nav_contact: "GET IN TOUCH",
-          hero_tag: "WE ARE FURI",
-          hero_title: "CRAFTING<br><span class='highlight'>EPIC WORLDS.</span>",
-          hero_subtitle: "Pushing the boundaries of 2D art and engaging gameplay. We build universes where legendary battles and fantasy adventures collide.",
-          hero_btn: "EXPLORE TITLES <i>▶</i>",
-          sec_featured: "FEATURED TITLES",
-          goblin_tag: "IN DEVELOPMENT",
-          goblin_title: "PROJECT: GOBLIN",
-          goblin_desc: "Master the arcane arts in a vibrant, sprawling fantasy universe. Combine elemental magic in deep, chaotic battles to conquer the mystical lands inhabited by legendary goblin tribes.",
-          goblin_btn: "VIEW PROJECT",
-          tank_tag: "EARLY ACCESS",
-          tank_title: "PIXEL TANK SQUADRON",
-          tank_desc: "High-octane retro arcade warfare. Command a squad of unique pixelated heroes in intense, screen-shaking tactical tank battles against merciless enemy generals.",
-          tank_btn: "ENGAGE NOW",
-          footer_desc: "Building the next generation of 2D masterpiece games from the ground up.",
-          footer_copy: "&copy; 2026 Furi Studio. All rights reserved."
-        },
-        zh: {
-          nav_games: "游戏列表",
-          nav_studio: "关于我们",
-          nav_careers: "招募精英",
-          nav_contact: "联系合作",
-          hero_tag: "WE ARE FURI",
-          hero_title: "惊世骇俗，<br><span class='highlight'>由这里创设。</span>",
-          hero_subtitle: "追求最极致的2D视效与撼动人心的游戏体验。在传说般的幻想纪元交织中，我们将构筑属于FURI的全新宇宙。",
-          hero_btn: "探索企划 <i>▶</i>",
-          sec_featured: "精选企划",
-          goblin_tag: "开发中",
-          goblin_title: "项目：哥布林",
-          goblin_desc: "在绚烂广阔的奇幻世界中磨炼独创的魔法体系。运用相生相克的元素在混沌战局中克敌制胜，征服由神秘哥布林部落统治的大陆。",
-          goblin_btn: "查看详情",
-          tank_tag: "抢先体验",
-          tank_title: "像素坦克 (暂定)",
-          tank_desc: "爽快感爆棚的复古街机战术大作。编排充满个性的高精度像素风英雄部队，在震屏不断的轰炸中，粉碎冷酷敌军将领的阴谋。",
-          tank_btn: "前往官网",
-          footer_desc: "从零开始，打造次时代2D艺术的无上杰作。",
-          footer_copy: "&copy; 2026 株式会社富鯉 (Furi Studio). 保留所有权利。"
-        }
-      };
-
-      // Change Language Function
-      function setLang(lang) {
-        document.documentElement.lang = lang;
-        localStorage.setItem('furi_lang', lang);
-        
-        // Update all elements with data-i18n
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-          const key = el.getAttribute('data-i18n');
-          if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-          }
-        });
-
-        // Update active class on buttons
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-          btn.classList.remove('active');
-          if (btn.getAttribute('onclick').includes(`'${lang}'`)) {
-            btn.classList.add('active');
-          }
-        });
-      }
-
-      // Initialize scripts on load
-      document.addEventListener("DOMContentLoaded", () => {
-        // Init Language
-        const savedLang = localStorage.getItem('furi_lang') || 'ja';
-        setLang(savedLang);
-
-        // Scroll Observer
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('reveal-visible');
-            }
-          });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-        const nav = document.querySelector('.nav');
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) nav.classList.add('scrolled');
-          else nav.classList.remove('scrolled');
-        });
-      });
-    </script>
+    <script src="content.js"></script>
+    <script src="index.js" defer></script>
 </head>
-<body>
-
-    <!-- Navigation -->
+<body data-page="home" data-i18n-title="title">
     <header class="nav">
         <div class="nav-container">
-            <div class="logo-text">FURI<span>STUDIO</span></div>
-            <nav class="nav-links">
-                <a href="#games" class="nav-link" data-i18n="nav_games">GAMES</a>
-                <a href="#footer" class="nav-link" data-i18n="nav_studio">STUDIO</a>
-                <a href="#footer" class="nav-link" data-i18n="nav_careers">CAREERS</a>
-                <div class="lang-switcher">
-                    <button class="lang-btn" onclick="setLang('ja')">JP</button>
-                    <button class="lang-btn" onclick="setLang('en')">EN</button>
-                    <button class="lang-btn" onclick="setLang('zh')">中</button>
-                </div>
+            <a class="brandmark" href="index.html" aria-label="Fukoi home">
+                <span class="brandmark-word" data-i18n="site_wordmark">FUKOI</span>
+                <span class="brandmark-legal" data-i18n="site_name">株式会社富鯉</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">PROJECTS</a>
+                <a href="studio.html" class="nav-link" data-i18n="nav_studio">STUDIO</a>
+                <a href="#company-info" class="nav-link" data-i18n="nav_contact">CONTACT</a>
             </nav>
-            <a href="#footer" class="nav-cta" data-i18n="nav_contact">お問い合わせ</a>
+
+            <div class="nav-actions">
+                <div class="lang-switcher" aria-label="Language switcher">
+                    <button class="lang-btn" type="button" data-lang="ja" data-i18n="lang_ja">JP</button>
+                    <button class="lang-btn" type="button" data-lang="en" data-i18n="lang_en">EN</button>
+                    <button class="lang-btn" type="button" data-lang="zh" data-i18n="lang_zh">中</button>
+                </div>
+                <a href="studio.html" class="nav-cta" data-i18n="hero_secondary">STUDIO / COMPANY</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg-container">
-            <img src="./assets/images/loading新-2.jpg" alt="Goblin Epic Art" class="hero-bg-image">
-            <div class="hero-overlay"></div>
-        </div>
-        
-        <div class="hero-content reveal">
-            <span class="epic-tag" data-i18n="hero_tag">WE ARE FURI</span>
-            <h1 class="hero-title" data-i18n="hero_title">壮大な世界を、<br><span class="highlight">ここに創り出す。</span></h1>
-            <p class="hero-subtitle" data-i18n="hero_subtitle">最高峰の2Dアートと、心を揺さぶるゲーム体験を求めて。伝説の戦いとファンタジーが交差する、我々が築き上げる新たな宇宙へ。</p>
-            <a href="#games" class="btn-epic" data-i18n="hero_btn">プロジェクトを見る <i>▶</i></a>
-        </div>
-    </section>
+    <main>
+        <section class="hero hero-home" id="top">
+            <div class="hero-bg"></div>
+            <div class="hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="section-kicker" data-i18n="hero_tag">JAPAN-BASED GAME COMPANY</span>
+                    <h1 class="hero-title" data-i18n="hero_title">日本発のゲームプロダクトを、<br><span class="highlight">グローバル市場へ。</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">株式会社富鯉は、日本に拠点を置く独立法人として、ゲームプロダクトの開発・運営および海外市場展開に取り組んでいます。</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary" data-i18n="hero_primary">PROJECTS</a>
+                        <a href="studio.html" class="btn-secondary" data-i18n="hero_secondary">STUDIO / COMPANY</a>
+                    </div>
+                </div>
 
-    <!-- Games Section -->
-    <section class="section" id="games">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="sec_featured">FEATURED TITLES</h2>
-      </div>
-      
-      <div class="games-showcase">
-        
-        <!-- Game 1: Goblin -->
-        <article class="epic-game-card reveal">
-          <div class="game-visuals">
-            <img src="./assets/images/勇士.jpg" alt="Goblin Warriors" class="game-image">
-          </div>
-          <div class="game-info-epic">
-            <span class="status-badge" data-i18n="goblin_tag">IN DEVELOPMENT</span>
-            <h3 class="game-name" data-i18n="goblin_title">プロジェクト：GOBLIN</h3>
-            <p class="game-desc" data-i18n="goblin_desc">鮮やかで広大なファンタジー世界で、独自の魔法を極めよう。属性魔法を組み合わせてカオスなバトルを制し、ゴブリンの部族が支配する神秘的な大地を征服せよ。</p>
-            <a href="#" class="link-epic" data-i18n="goblin_btn">詳細を見る</a>
-          </div>
-        </article>
-
-        <!-- Game 2: Pixel Tanks -->
-        <article class="epic-game-card reveal">
-          <div class="game-visuals">
-            <div class="pixel-showcase">
-              <div class="pixel-sprite-container"><img src="./assets/images/tank_sherman_45deg_256拆分.jpg" alt="Sherman Tank" class="pixel-sprite"></div>
-              <div class="pixel-sprite-container"><img src="./assets/images/1K17激光坦克_拆分 (1).jpg" alt="Laser Tank" class="pixel-sprite"></div>
-              <div class="pixel-sprite-container"><img src="./assets/images/24T-256xp拆分.jpg" alt="24T Tank" class="pixel-sprite"></div>
-              <div class="pixel-sprite-container"><img src="./assets/images/T-90拆分加长拆分改绿色.jpg" alt="T-90 Tank" class="pixel-sprite"></div>
-              <div class="pixel-sprite-container"><img src="./assets/images/喀秋莎_20250828拆分 (1).jpg" alt="Katyusha" class="pixel-sprite"></div>
-              <div class="pixel-sprite-container"><img src="./assets/images/机器狗拆分.jpg" alt="Robot Dog" class="pixel-sprite"></div>
+                <div class="hero-visual reveal">
+                    <div class="poster-card">
+                        <div class="poster-card-meta">
+                            <span class="poster-chip" data-i18n="hero_poster_label">PRIMARY TITLE</span>
+                            <h2 class="poster-card-title" data-i18n="hero_poster_title">NEW TACTICAL PROJECT</h2>
+                            <p class="poster-card-copy" data-i18n="hero_poster_copy">日本市場を見据えたビジュアル表現と、直感的な戦術体験を軸に構築中の新作プロジェクト。</p>
+                        </div>
+                        <div class="poster-art-frame">
+                            <img src="./assets/images/new-tactical-poster.png" alt="New tactical project poster art" class="poster-art">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="game-info-epic">
-            <span class="status-badge live" data-i18n="tank_tag">EARLY ACCESS</span>
-            <h3 class="game-name" data-i18n="tank_title">ピクセル・タンク (仮名)</h3>
-            <p class="game-desc" data-i18n="tank_desc">爽快感抜群のレトロアーケード・タクティクス。個性豊かなドット絵の英雄たちで部隊を編成し、画面が揺れるほどの激しい戦車戦で、冷酷な敵将軍を打ち倒せ。</p>
-            <a href="#" class="link-epic" data-i18n="tank_btn">公式サイトへ</a>
-          </div>
-        </article>
+        </section>
 
-      </div>
-    </section>
+        <section class="section section-dark reveal" id="about">
+            <div class="section-shell">
+                <div class="section-header section-header-left">
+                    <span class="section-kicker" data-i18n="company_intro_eyebrow">COMPANY PRESENCE</span>
+                    <h2 class="section-title" data-i18n="about_title">ABOUT FUKOI</h2>
+                    <p class="section-subtitle" data-i18n="about_subtitle">日本発、グローバル展開を見据えたゲーム開発・運営体制</p>
+                </div>
 
-    <!-- Footer -->
+                <div class="about-grid">
+                    <div class="about-body-card">
+                        <p data-i18n="about_body">富鯉株式会社は、日本に拠点を置く独立法人として、日本および海外市場に向けたゲームプロダクトの開発、運営および関連事業の展開を行っております。市場特性を踏まえたローカライズ対応、運営管理、日本国内の制作パートナーや発行会社との連携を通じて、良質なゲームコンテンツをより広い市場へ届けることを目指しております。</p>
+                    </div>
+
+                    <div class="capability-grid">
+                        <article class="capability-card">
+                            <h3 data-i18n="capability_1_title">ゲーム開発</h3>
+                            <p data-i18n="capability_1_body">AI活用を中核とした開発体制のもと、企画・制作・実装を推進</p>
+                        </article>
+                        <article class="capability-card">
+                            <h3 data-i18n="capability_2_title">ゲーム運営</h3>
+                            <p data-i18n="capability_2_body">運営管理、コンテンツ更新、ユーザー体験向上を継続的に実施</p>
+                        </article>
+                        <article class="capability-card">
+                            <h3 data-i18n="capability_3_title">海外市場展開</h3>
+                            <p data-i18n="capability_3_body">ローカライズ、制作連携、発行協力を通じて市場展開を推進</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="projects">
+            <div class="section-shell">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="projects_title">FEATURED TITLES</h2>
+                </div>
+
+                <div class="project-stack">
+                    <article class="project-card project-card-primary">
+                        <div class="project-card-visual project-card-visual-poster">
+                            <img src="./assets/images/new-tactical-poster.png" alt="New tactical project key visual" class="project-poster-image">
+                            <div class="project-visual-overlay">
+                                <img src="./assets/images/new-tactical-logo.png" alt="New tactical project logo" class="project-logo-image">
+                            </div>
+                        </div>
+                        <div class="project-card-copy">
+                            <span class="status-badge" data-i18n="project_primary_status">IN DEVELOPMENT</span>
+                            <h3 class="project-title" data-i18n="project_primary_title">NEW TACTICAL PROJECT</h3>
+                            <p class="project-description" data-i18n="project_primary_body">ピクセルアートによる戦場表現と、直感的な戦術体験を軸に構築中の新作プロジェクト。日本市場を見据えたビジュアル表現とゲーム体験の両立を目指し、開発を進めています。</p>
+                            <a href="studio.html" class="project-link" data-i18n="project_primary_action">VIEW PROJECT</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card-secondary">
+                        <div class="project-card-visual project-card-visual-goblin">
+                            <img src="./assets/images/勇士.jpg" alt="Goblin project art" class="project-cover-image">
+                        </div>
+                        <div class="project-card-copy">
+                            <span class="status-badge" data-i18n="project_secondary_status">IN DEVELOPMENT</span>
+                            <h3 class="project-title" data-i18n="project_secondary_title">PROJECT: GOBLIN</h3>
+                            <p class="project-description" data-i18n="project_secondary_body">鮮やかで広大なファンタジー世界を舞台に、独自の魔法体系と戦略性を掛け合わせた開発中プロジェクト。世界観表現と継続運営を見据えたプロダクト設計を進めています。</p>
+                            <a href="studio.html" class="project-link" data-i18n="project_secondary_action">VIEW PROJECT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark reveal" id="company-info">
+            <div class="section-shell">
+                <div class="section-header section-header-left">
+                    <h2 class="section-title" data-i18n="company_info_title">COMPANY INFO</h2>
+                    <p class="section-subtitle" data-i18n="company_intro_body">Games in development for Japan and beyond.</p>
+                </div>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_name_label">会社名</span>
+                        <p class="info-value" data-i18n="company_name_value">株式会社富鯉</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_address_label">所在地</span>
+                        <p class="info-value" data-i18n="company_address_value">東京都品川区東五反田一丁目8番1号 シルバープラザ五反田</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_business_label">事業内容</span>
+                        <p class="info-value" data-i18n="company_business_value">ゲーム開発・運営・海外市場展開</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_contact_label">お問い合わせ</span>
+                        <p class="info-value"><a href="mailto:contact@fukoi.co" data-i18n="company_contact_value">contact@fukoi.co</a></p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_established_label">設立</span>
+                        <p class="info-value" data-i18n="company_established_value">2024年6月21日</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label" data-i18n="company_languages_label">言語</span>
+                        <p class="info-value" data-i18n="company_languages_value">JP / EN / 中文</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer" id="footer">
-        <div class="footer-logo">FURI<span>STUDIO</span></div>
-        <p class="footer-desc" data-i18n="footer_desc">次世代の2Dマスターピースを、ゼロから創り上げる。</p>
-        <div class="footer-bottom" data-i18n="footer_copy">
-            &copy; 2026 株式会社富鯉 (Furi Studio). All rights reserved.
+        <div class="footer-shell">
+            <div class="footer-brand">
+                <div class="footer-wordmark" data-i18n="site_wordmark">FUKOI</div>
+                <p class="footer-legal" data-i18n="footer_company_name">株式会社富鯉</p>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-block">
+                    <span class="footer-heading" data-i18n="footer_location_heading">LOCATION</span>
+                    <p data-i18n="company_address_value">東京都品川区東五反田一丁目8番1号 シルバープラザ五反田</p>
+                </div>
+                <div class="footer-block">
+                    <span class="footer-heading" data-i18n="footer_contact_heading">CONTACT</span>
+                    <p><a href="mailto:contact@fukoi.co" data-i18n="company_contact_value">contact@fukoi.co</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom" data-i18n="footer_copy">&copy; 2024–2026 株式会社富鯉</div>
         </div>
     </footer>
-
 </body>
 </html>
